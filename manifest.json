@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "IRL mode – an unofficial fan project for Mathem",
+  "short_name": "IRL mode",
+  "version": "1.0.0",
+  "description": "Walk through mathem.se as a first-person supermarket. Not affiliated with or endorsed by Mathem.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.mathem.se/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": [
+    "https://images.mathem.se/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "game/*"
+      ],
+      "matches": [
+        "https://www.mathem.se/*"
+      ]
+    }
+  ]
+}

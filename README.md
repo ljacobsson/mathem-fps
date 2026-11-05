@@ -9,6 +9,8 @@ Chrome extension that turns [mathem.se](https://www.mathem.se/se/) into a first-
 Categories become aisles, real products (live prices, real photos) stand on the shelves, and you push
 a cart around while your hand picks things off the shelf and drops them in.
 
+![Walking the aisles, picking groceries into the cart](media/demo.gif)
+
 ## Install
 
 1. `chrome://extensions` → enable **Developer mode**

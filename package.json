@@ -1,0 +1,13 @@
+{
+  "name": "irl-mode",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Unofficial fan project: a first-person supermarket for mathem.se. Not affiliated with or endorsed by Mathem.",
+  "scripts": {
+    "vendor": "node scripts/vendor.mjs"
+  },
+  "devDependencies": {
+    "three": "0.186.1"
+  },
+  "license": "PolyForm-Noncommercial-1.0.0"
+}
